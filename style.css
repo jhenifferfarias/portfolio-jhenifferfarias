@@ -90,6 +90,8 @@ section {
     height: 100vh;
 }
 
+
+/* RESPONSIVIDADE */
 @media (max-width: 1200px) {
     header {
         width: 70%;       
@@ -106,8 +108,7 @@ section {
     }
 }
 
-
-/* responsividade mudando imagem */
+/* responsividade mudando direção do logo */
 @media (max-width: 768px) {
     header {
         width: 90%;
@@ -115,6 +116,7 @@ section {
 
     header .container {
     padding: 0 50px;
+    position: absolute;
     }
 
     h1 {
@@ -127,9 +129,9 @@ section {
 
    header .container img {
     display: block;
-    padding: 0 50px 0 90%;
+    position: relative;
+    padding: 0 50px 0 80%;
     height: var(--nav);
-    /* background-color: aqua; */
     }
 
     nav img {
@@ -144,6 +146,24 @@ section {
         padding: 0 50px;
     }
 }
-/* 
+
+
 @media (max-width: 516px) {
-} */
+
+    header .container img {
+        display: none;
+    }
+
+    header .container {
+        padding: 0 15px;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+        
+    nav ul {
+        display: none;
+    }
+}
+
