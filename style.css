@@ -65,6 +65,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: #000;
+    z-index: 99;
 }
 
 header img {
@@ -91,15 +92,69 @@ nav ul a svg {
     display: none;
 }
 
-section {
-    height: 100vh;
+.about-me {
+    display: flex;
+    padding: 100px;
 }
 
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me .container p {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 10%;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.about-me .img-container img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-me .img-container .line {
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--light-text);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+    
+}
+
+.about-me .img-container .line.white {
+    transform: rotate(-3.3deg);
+    color: white;
+}
+
+.services {
+    height: 1000px;
+}
 
 /* RESPONSIVIDADE */
 @media (max-width: 1200px) {
     header {
         width: 70%;       
+    }
+
+    .about-me .container p {
+        display: block;
+        font-size: 18px;
     }
 }
 
@@ -115,6 +170,20 @@ section {
     nav ul a {
         font-size: 16px;
     }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me .container, .about-me .img-container {
+        width: 100%;
+        padding-right:0;
+    }
+
+    .about-me .img-container {
+        margin: 50px 0;       
+    }
+
 }
 
 /* responsividade retirando o logo */
@@ -133,6 +202,10 @@ section {
 
     nav ul {
         padding: 0 40px;
+    }
+
+    .about-me {
+        padding: 40px;
     }
 }
 
@@ -165,6 +238,10 @@ section {
     nav ul a svg {
         display: block;
         margin: 0 auto 10px;
+    }
+
+    .about-me {
+        padding: 15px;
     }
 }
 
