@@ -187,17 +187,19 @@ nav ul a svg {
 
 .portfolio {
   text-align: center;
-  margin: 150px 0;
+  height: 800px;
+  margin-top: 100px;
   padding: 0 100px;
 }
 
 .portfolio .portfolio-container {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .portfolio .portfolio-container .portfolio-card {
-    width: 280px;
+    width: 320px;
     border-radius: 10px;
     background-color: #2b2a2332;
     padding: 40px 25px;
@@ -227,14 +229,20 @@ nav ul a svg {
     border-radius: 15px;
 }
 
+li + li {
+    margin-left: 3px;
+}
+
 .portfolio .portfolio-container .portfolio-card p {
   text-align: left;
   margin: 0;
 }
 
-li + li {
-    margin-left: 3px;
+
+.cv {
+  text-align: center;
 }
+
 
 /* RESPONSIVIDADE || monitores pequenos */
 @media (max-width: 1200px) {
@@ -267,6 +275,7 @@ li + li {
 
   .about-me {
     flex-direction: column;
+    align-items: center;
   }
 
   .about-me .container,
@@ -279,19 +288,31 @@ li + li {
     margin: 50px 0;
   }
 
-  .services {
+  .about-me .img-container .line {
+    height: calc(100% + 50px);
+  }
+
+  .services, .portfolio {
     padding: 15px;
   }
 
-  .services-container {
+  .services-container, .portfolio .portfolio-container {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
 
-  .card-container + .card-container {
+  .card-container + .card-container, .portfolio-card + .portfolio-card {
     margin-left: 0px;
     margin-top: 25px;
+  }
+
+  .portfolio {
+    height: 100%;
+  }
+
+  .portfolio .portfolio-container .portfolio-card {
+    width: 370px;
   }
 }
 
@@ -347,11 +368,15 @@ li + li {
     margin: 0 auto 10px;
   }
 
-  .about-me {
+  .about-me, .services, .portfolio {
     padding: 15px;
   }
 
-  .services .services-container .card-container {
+  .services .services-container .card-container, .portfolio .portfolio-container .portfolio-card {
     width: 280px;
+  }
+
+  .portfolio h1 {
+    margin: 0;
   }
 }
