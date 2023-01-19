@@ -239,8 +239,49 @@ li + li {
 }
 
 
-.cv {
+.curriculum {
   text-align: center;
+  padding: 0 100px;
+}
+
+.curriculum .curriculum-container {
+  display: flex;
+  width: 100%;
+}
+
+.curriculum .curriculum-info {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-gap: 1rem;
+  
+}
+
+.curriculum .curriculum-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+}
+
+.curriculum .img-curriculum {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+  align-items: center;
+  width: 100%;
+}
+
+.curriculum-content button {
+  display: flex;
+  align-items: center;
+}
+
+.curriculum-content button img {
+  margin-right: 5px;
+  width: 25px;
 }
 
 
