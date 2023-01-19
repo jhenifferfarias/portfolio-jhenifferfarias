@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap");
 
 :root {
   --dark-text: #665006;
@@ -9,7 +9,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 html,
@@ -32,9 +32,9 @@ header .container {
 }
 
 h1 {
-    font-weight: 500;
-    font-size: 44px;
-    color: var(--light-text);
+  font-weight: 500;
+  font-size: 44px;
+  color: var(--light-text);
 }
 
 header .container h1 {
@@ -72,6 +72,8 @@ nav {
   top: 0;
   background-color: #000;
   z-index: 99;
+  /* background: #665006; 
+  filter: blur(200px); */
 }
 
 header img {
@@ -111,6 +113,7 @@ nav ul a svg {
 .about-me .container h1 {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .about-me .container p {
@@ -127,13 +130,13 @@ nav ul a svg {
 
 .about-me .img-container img {
   width: 70%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
 }
 
 .about-me .img-container .line {
   width: calc(70% + 50px);
-  height: calc(100% + 50px);
+  height: calc(90% + 50px);
   border: 1px solid var(--light-text);
 
   position: absolute;
@@ -147,51 +150,93 @@ nav ul a svg {
 }
 
 .services {
-    text-align: center;
-    margin: 150px 0;
-    padding: 0 100px;
+  text-align: center;
+  margin: 150px 0;
+  padding: 0 100px;
 }
 
 .services-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 60px auto 0;
-    max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto 0;
+  max-width: 1200px;
 }
 
 .services .services-container .card-container {
-    width: 380px;
-    border: 1px solid var(--dark-text);
-    border-radius: 10px;
-    background-color: #36363657;
+  width: 370px;
+  border: 1px solid var(--dark-text);
+  border-radius: 10px;
+  background-color: #36363657;
 
+  padding: 40px 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.services .services-container .card-container .icon svg {
+  margin-bottom: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.card-container + .card-container,
+.portfolio-card + .portfolio-card {
+  margin-left: 20px;
+}
+
+.portfolio {
+  text-align: center;
+  margin: 150px 0;
+  padding: 0 100px;
+}
+
+.portfolio .portfolio-container {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .portfolio-container .portfolio-card {
+    width: 280px;
+    border-radius: 10px;
+    background-color: #2b2a2332;
     padding: 40px 25px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    border: 1px solid #6650066d;
 }
 
-.services .services-container .card-container .icon svg {
-    margin-bottom: 40px;
-    width: 40px;
-    height: 40px;
+.portfolio .portfolio-container .portfolio-card .portfolio-img img {
+  width: 100%;  
+  border-radius: 20px;
 }
 
-.card-container+ .card-container {
-    margin-left: 20px;
+.portfolio .portfolio-container .portfolio-tools ul {
+    display: flex;
+    padding: 0 10px;
+    margin-top: 8px;
+    list-style: none;
+  }
+  
+  .portfolio .portfolio-container .portfolio-tools ul li {
+    color:#fff019;
+    font-size: 12px;
+    border: 1px solid #665006;
+    padding: 3px 12px;
+    border-radius: 15px;
 }
 
-.portfolio {
-    text-align: center;
-    margin: 150px 0;
-    padding: 0 100px;
+.portfolio .portfolio-container .portfolio-card p {
+  text-align: left;
+  margin: 0;
 }
 
+li + li {
+    margin-left: 3px;
+}
 
-
-
-
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE || monitores pequenos */
 @media (max-width: 1200px) {
   header {
     width: 70%;
@@ -200,8 +245,13 @@ nav ul a svg {
   .about-me .container p {
     display: block;
   }
+
+  .services {
+    margin: 100px 0;
+  }
 }
 
+/* responsividade tablet */
 @media (max-width: 992px) {
   header {
     width: 100%;
@@ -228,9 +278,24 @@ nav ul a svg {
   .about-me .img-container {
     margin: 50px 0;
   }
+
+  .services {
+    padding: 15px;
+  }
+
+  .services-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container + .card-container {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
 }
 
-/* responsividade retirando o logo */
+/* responsividade retirando o logo para dispositivos pequenos*/
 @media (max-width: 768px) {
   header .container {
     padding: 0 40px;
@@ -252,7 +317,7 @@ nav ul a svg {
     padding: 40px;
   }
 }
-
+/* responsividade menores dispositivos */
 @media (max-width: 536px) {
   header .container {
     padding: 0 15px;
@@ -284,5 +349,9 @@ nav ul a svg {
 
   .about-me {
     padding: 15px;
+  }
+
+  .services .services-container .card-container {
+    width: 280px;
   }
 }
