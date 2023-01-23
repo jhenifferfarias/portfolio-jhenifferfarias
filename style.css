@@ -247,6 +247,12 @@ li + li {
   margin: 0;
 }
 
+.card-description {
+  /* background-color: red; */
+  padding-top: 5px;
+
+}
+
 .curriculum {
   text-align: center;
   padding: 0 100px;
