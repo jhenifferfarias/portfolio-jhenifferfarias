@@ -199,45 +199,44 @@ nav ul a svg {
 }
 
 .portfolio .portfolio-container .portfolio-card {
-    width: 320px;
-    border-radius: 10px;
-    background-color: #2b2a2332;
-    padding: 40px 25px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    border: 1px solid #6650066d;
+  width: 320px;
+  border-radius: 10px;
+  background-color: #2b2a2332;
+  padding: 40px 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid #6650066d;
 }
 
 .portfolio .portfolio-container .portfolio-card .portfolio-img img {
-  width: 100%;  
+  width: 100%;
   border-radius: 20px;
 }
 
 .portfolio .portfolio-container .portfolio-tools ul {
-    display: flex;
-    padding: 0 10px;
-    margin-top: 8px;
-    list-style: none;
-  }
-  
-  .portfolio .portfolio-container .portfolio-tools ul li {
-    color:#fff019;
-    font-size: 12px;
-    border: 1px solid #665006;
-    padding: 3px 12px;
-    border-radius: 15px;
+  display: flex;
+  padding: 0 10px;
+  margin-top: 8px;
+  list-style: none;
+}
+
+.portfolio .portfolio-container .portfolio-tools ul li {
+  color: #fff019;
+  font-size: 12px;
+  border: 1px solid #665006;
+  padding: 3px 12px;
+  border-radius: 15px;
 }
 
 li + li {
-    margin-left: 3px;
+  margin-left: 3px;
 }
 
 .portfolio .portfolio-container .portfolio-card p {
   text-align: left;
   margin: 0;
 }
-
 
 .curriculum {
   text-align: center;
@@ -283,9 +282,7 @@ li + li {
   width: 25px;
 }
 
-
 /* margin-bottom: calc(var(--nav) + 50px); */
-
 
 /* RESPONSIVIDADE || monitores pequenos */
 @media (max-width: 1200px) {
@@ -335,17 +332,22 @@ li + li {
     height: calc(100% + 50px);
   }
 
-  .services, .portfolio, .curriculum {
+  .services,
+  .portfolio,
+  .curriculum {
     padding: 15px;
   }
 
-  .services-container, .portfolio .portfolio-container,.curriculum .curriculum-container {
+  .services-container,
+  .portfolio .portfolio-container,
+  .curriculum .curriculum-container {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
 
-  .card-container + .card-container, .portfolio-card + .portfolio-card {
+  .card-container + .card-container,
+  .portfolio-card + .portfolio-card {
     margin-left: 0px;
     margin-top: 25px;
   }
@@ -357,14 +359,19 @@ li + li {
   .portfolio .portfolio-container .portfolio-card {
     width: 370px;
   }
-  
+
   .curriculum .img-curriculum {
     margin-top: 0;
-  }  
+  }
 
   .curriculum .img-curriculum img {
     margin: 40px auto;
     width: 150px;
+  }
+
+  .curriculum-info {
+    grid-template-columns: 105px auto;
+    grid-gap: 0.7rem;
   }
 }
 
@@ -420,16 +427,18 @@ li + li {
     margin: 0 auto 10px;
   }
 
-  .about-me, .services, .portfolio {
+  .about-me,
+  .services,
+  .portfolio {
     padding: 15px;
   }
 
-  .services .services-container .card-container, .portfolio .portfolio-container .portfolio-card {
+  .services .services-container .card-container,
+  .portfolio .portfolio-container .portfolio-card {
     width: 280px;
   }
 
   .portfolio h1 {
     margin: 0;
   }
-
 }
