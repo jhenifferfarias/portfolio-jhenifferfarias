@@ -7,13 +7,8 @@
     <title>Jheniffer Farias</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="shortcut icon"
-      href="/assets/code-solid.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="/assets/code-solid.svg" type="image/x-icon"/>
   </head>
-
   <body>
     <header>
       <div class="container">
@@ -32,14 +27,14 @@
     <nav>
       <img src="./assets/logo.png" alt="logo jheniffer farias" />
       <ul>
-        <a href=""><i data-feather="user"></i>Sobre mim</a>
-        <a href=""><i data-feather="file-plus"></i>Serviços</a>
-        <a href=""><i data-feather="briefcase"></i>Portfólio</a>
-        <a href=""><i data-feather="book-open"></i>Currículo</a>
-        <a href=""><i data-feather="send"></i>Contato</a>
+        <a href="#aboutme"><i data-feather="user"></i>Sobre mim</a>
+        <a href="#services"><i data-feather="file-plus"></i>Serviços</a>
+        <a href="#portfolio"><i data-feather="briefcase"></i>Portfólio</a>
+        <a href="#curriculum"><i data-feather="book-open"></i>Currículo</a>
+        <a href="#contact"><i data-feather="send"></i>Contato</a>
       </ul>
     </nav>
-    <section class="about-me">
+    <section id="aboutme" class="about-me">
       <div class="container">
         <h1>Sobre mim</h1>
         <p>
@@ -61,7 +56,7 @@
         <img src="./assets/profile.jpg" alt="Foto de Jheniffer Farias" />
       </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <h1>Serviços</h1>
       <div class="services-container">
         <div class="card-container">
@@ -95,7 +90,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h1>Portfólio</h1>
       <div class="portfolio-container">
         <div class="portfolio-card">
@@ -139,11 +134,12 @@
         </div>
       </div>
     </section>
-    <section class="curriculum">
+    <section id="curriculum" class="curriculum">
       <h1>Currículo</h1>
       <div class="curriculum-container">
         <div class="img-curriculum">
-        <img src="/assets/file-text.png" alt=""> </div>
+        <img src="/assets/file-text.png" alt="">
+      </div>
         <div class="curriculum-content">
           <div class="curriculum-info">
             <span>Nome</span><b>Jheniffer Farias</b>
@@ -162,8 +158,7 @@
         </div>
       </div>
     </section>
-    
-    <section class="contact">
+    <section id="contact" class="contact">
       <h1>Vamos trabalhar juntos?</h1>
       <p>Se você gostou do meu trabalho e quer saber mais, entre em contato comigo.</p>
       <button onclick="window.open('https://api.whatsapp.com/send/?phone=5512991450676')">Entre em contato</button>
@@ -171,12 +166,11 @@
         <a href="https://github.com/jhenifferfarias"><img src="/assets/github.png" alt="GitHub logo"></a>
         <a href="https://linkedin.com/in/jhenifferfarias/"><img src="/assets/linkedin.png" alt="Linkedin logo"></a>
         <a href="https://instagram.com/jhenifferfarias_"><img src="/assets/instagram.png" alt="Instagram logo"></a>
-        <!-- <a href=""><img src="/assets/linkedin.png" alt="Linkedin logo"></a> -->
       </div>
     </section>
-    <footer><p>
+    <footer>
       Made by Jheniffer Farias - 2023
-    </p></footer>
+    </footer>
       
       <script>
       feather.replace();
