@@ -19,6 +19,10 @@ body {
   color: var(--light);
 }
 
+body {
+  margin-bottom: calc(var(--nav) + 50px);
+}
+
 header {
   height: calc(100vh - var(--nav));
   width: 60%;
@@ -60,6 +64,7 @@ button {
   padding: 8px 35px;
   color: #fff;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 nav {
@@ -271,6 +276,10 @@ li + li {
   margin-top: 40px;
 }
 
+.curriculum .img-curriculum img {
+  max-width: 270px;
+}
+
 .curriculum-content button {
   display: flex;
   align-items: center;
@@ -282,7 +291,11 @@ li + li {
   width: 25px;
 }
 
-/* margin-bottom: calc(var(--nav) + 50px); */
+
+footer {
+  text-align: center;
+  color: #b3b3b3;
+}
 
 /* RESPONSIVIDADE || monitores pequenos */
 @media (max-width: 1200px) {
