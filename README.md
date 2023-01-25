@@ -28,6 +28,7 @@ _____
 
 **Gostou do meu trabalho?**
 ![gato de botas ugh](https://media.giphy.com/media/wEMpZxPfGY38blHck7/giphy.gif)
+
 *Veja-o completo no [GitHub Pages](https://jhenifferfarias.github.io/portfolio-jhenifferfarias/).*
 
 
