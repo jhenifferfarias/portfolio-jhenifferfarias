@@ -1,7 +1,7 @@
 # Portfólio
 ### Portólio pessoal usando HTML e CSS
 
-*Veja o trabalho completo no [GitHub Pages](Veja%20o%20trabalho%20completo%20no%20%5BGitHub%20Pages%5D%28https://jhenifferfarias.github.io/portfolio-jhenifferfarias/%29)*
+*Veja o trabalho completo no [GitHub Pages](https://jhenifferfarias.github.io/portfolio-jhenifferfarias/)*
 
 Esse portfólio foi criado por mim e usado para praticar meus conhecimentos, além de ser uma ferramenta para que eu possa me apresentar e mostrar minhas técnicas e meu trabalho.
 
