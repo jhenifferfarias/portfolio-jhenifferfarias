@@ -1,3 +1,4 @@
+
 # Portfólio
 ### Portólio pessoal usando HTML e CSS
 
@@ -23,8 +24,10 @@ Todos os botões do menu são funcionais, ao clicar redireciona você para a ses
 
 Na última sessão, contamos com o título estilizado com um linear-gradient de duas cores para a melhor estilização da página, e também os botões e ícones de contatos clicáveis que te redirecionam para as páginas descritas.
 
-Gostou do meu trabalho?
+_____
 
+**Gostou do meu trabalho?**
+![enter image description here](https://media.giphy.com/media/YN9WiZM2wQLclskyrD/giphy-downsized-large.gif)
 *Veja-o completo no [GitHub Pages](https://jhenifferfarias.github.io/portfolio-jhenifferfarias/).*
 
 
