@@ -27,5 +27,7 @@ Na última sessão, contamos com o título estilizado com um linear-gradient de 
 _____
 
 **Gostou do meu trabalho?**
-![olho do gato de botas no perrito](https://media.giphy.com/media/YN9WiZM2wQLclskyrD/giphy-downsized-large.gif)
+![gato de botas ugh](https://media.giphy.com/media/wEMpZxPfGY38blHck7/giphy.gif)
 *Veja-o completo no [GitHub Pages](https://jhenifferfarias.github.io/portfolio-jhenifferfarias/).*
+
+
